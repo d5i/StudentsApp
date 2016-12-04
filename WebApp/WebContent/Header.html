@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+#header_tr {
+	background-color: rgb(234, 234, 234);
+	font-size: 18;
+	font-family: Segoe UI;
+}
+
+#header_td {
+	border: 1px solid rgba(192, 192, 192, 0.8);
+	border-collapse: collapse;
+	border-bottom: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: 0px;
+}
+
+#header {
+	border: 1px solid rgba(192, 192, 192, 0.8);
+	border-collapse: collapse;
+	margin-left: -10px;
+}
+
+#coolBorder {
+	margin-top: 0px;
+	width: 100%;
+	opacity: 0.8;
+	border: 1px solid rgb(192, 192, 192);
+	margin-left: -10px;
+}
+#divHeader{
+	height: 5px;
+}
+
+a {
+ text-decoration: none;
+}
+
+</style>
+<body>
+	<table id="header">
+		<tr id="header_tr">
+			<td id="header_td">
+				<a href="http://localhost:8080/WebApp/loginPage">
+				<img src="home.png" height="26px" width="26px" alt="Home"></img> Home</a> 
+			<td id="header_td">
+				<a href="http://localhost:8080/WebApp/HeaderLinksServlet?body=search">
+				<img src="search.png" height="26px" width="26px" alt="Search"></img>Search Student</a>
+			<td id="header_td">
+				<a href="http://localhost:8080/WebApp/HeaderLinksServlet?body=createProfile">
+				<img src="create.png" height="26px" width="26px" alt="Create Profile"></img>
+				Create Profile</a>
+			<td id="header_td">
+				<a href="http://localhost:8080/WebApp/HeaderLinksServlet?body=changePassword">
+				<img src="change-pwd.png" height="26px" width="26px" alt="Change Password"></img> Change Password</a>
+			<td id = "header_td">
+				<a href="http://localhost:8080/WebApp/loginPage">
+				<img src="logout.png" height="26px" width="26px" alt="Logout"></img>Logout</a>
+			</tr>
+	</table>
+	<hr id="coolBorder">
+	<div id = "divHeader">
+	</div>
+</body>
+</html>

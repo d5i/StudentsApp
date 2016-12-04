@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+/* CSS*/
+#formContainer {
+	width: 35%;
+}
+
+#legendForm {
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-family: Segoe UI;
+	font-size: 15;
+}
+
+body {
+	font-family: Segoe UI;
+	font-size: 12;
+}
+</style>
+
+<body>
+	<!-- Form Part -->
+
+	<form name="createProfile" action="http://localhost:8080/WebApp/layers"
+		method="post">
+
+		<div id="formContainer">
+			<fieldset style="border-color: rgba(192, 192, 192, 0.8)">
+				<legend id=legendForm>Student Profile Creation Form</legend>
+				<table style="width: 100%">
+					<tr>
+						<td>Reg No.</td>
+						<td><input type="text" name="regNo"
+							placeholder="Enter Register No...."></td>
+					<tr>
+						<td>FirstName</td>
+						<td><input type="text" name="firstName"
+							placeholder="Enter FirstName..."></td>
+					<tr>
+						<td>MiddleName</td>
+						<td><input type="text" name="middleName"
+							placeholder="Enter MiddleName..."></td>
+					<tr>
+						<td>LastName</td>
+						<td><input type="text" name="lastName"
+							placeholder="Enter LastName..."></td>
+					<tr>
+						<td>Guardian FirstName</td>
+						<td><input type="text" name="guardianFirstName"
+							placeholder="Enter Guardian FirstName..."></td>
+					<tr>
+						<td>Guardian MiddleName</td>
+						<td><input type="text" name="guardianMiddleName"
+							placeholder="Enter Guardian MiddleName..."></td>
+					<tr>
+						<td>Guardian LastName</td>
+						<td><input type="text" name="guardianLastName"
+							placeholder="Enter Guardian LastName..."></td>
+					<tr>
+						<td>Paasword</td>
+						<td><input type="password" name="password"
+							placeholder="Enter Password..."></td>
+					<tr>
+						<td>Admin ?</td>
+						<td><select name="admin">
+								<option value="select">--Select--
+								<option value="yes">Yes
+								<option value="no">No
+						</select></td>
+					<tr>
+					<tr>
+						<td align="center" colspan="2"><input
+							style="margin-right: 20px;" type="submit"><input
+							type="reset">
+				</table>
+			</fieldset>
+		</div>
+	</form>
+</body>
+</html>

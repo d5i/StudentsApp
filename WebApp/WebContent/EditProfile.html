@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+#divForm {
+	width: 35%;
+}
+
+#legendForm {
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-family: Segoe UI;
+	font-size: 15;
+}
+
+body {
+	font-family: Segoe UI;
+	font-size: 12;
+}
+</style>
+
+<body>
+	<form name="editProfile" action="http://localhost:8080/WebApp/edit">
+		<div id="divForm">
+			<fieldset>
+				<legend id=legendForm>Edit</legend>
+				<table style="width: 100%">
+					<tr>
+						<td>Reg No.</td>
+						<td><input type="text" name="regNo" value="#regNo" disabled></td>
+					<tr>
+						<td>FirstName</td>
+						<td><input type="text" name="firstName" value="#firstName"></td>
+					<tr>
+						<td>MiddleName</td>
+						<td><input type="text" name="middleName" value="#middleName"></td>
+					<tr>
+						<td>LastName</td>
+						<td><input type="text" name="lastName" value="#lastName"></td>
+					<tr>
+						<td>Guardian FirstName</td>
+						<td><input type="text" name="guardianFirstName"
+							value="#guardianFirstName"></td>
+					<tr>
+						<td>Guardian MiddleName</td>
+						<td><input type="text" name="guardianMiddleName"
+							value="#guardianMiddleName"></td>
+					<tr>
+						<td>Guardian LastName</td>
+						<td><input type="text" name="guardianLastName"
+							value="#guardianLastName"></td>
+					<tr>
+					<tr>
+						<td align="center" colspan="2"><input
+							style="margin-right: 20px;" type="submit" value="Edit"><input
+							type="reset">
+				</table>
+			</fieldset>
+		</div>
+		<input type="hidden" name="regNo" value="#regNo">
+	</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+#divSearch {
+	width: 20%;
+}
+
+#legendSearch {
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+body {
+	font-family: Segoe UI;
+	font-size: 12;
+}
+</style>
+<body>
+	<form action="http://localhost:8080/WebApp/GraingerSearchServlet">
+		<div id="divSearch">
+			<fieldset>
+				<legend id="legendSearch">Search an Item</legend>
+				<table>
+					<tr>
+						<td>Keyword
+						<td><input type="text" name="keyword">
+					<tr>
+					<tr>
+						<td align = "center" colspan = "2"><input type="submit" value = "Search" style = "margin-right:20px">
+						<input type="reset">
+				</table>
+			</fieldset>
+		</div>
+	</form>
+</body>
+</html>

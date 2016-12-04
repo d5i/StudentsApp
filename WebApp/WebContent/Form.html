@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<form name = "form" method = "post" action = "http://localhost:8080/WebApp/login">
+	<table>
+	<tr>
+	<td>My Name is : </td>
+	<td><input type = "text" name = "name" value = "Dulari"><tr>
+	<td>My Password is : </td>
+	<td><input type = "password" name = "password"><tr>
+	<td>My Gender is : </td>
+	<td><input type = "radio" name = "gender" value  = "male" checked>Male
+	<input type = "radio" name = "gender" value = "female">Female<tr>
+	<td>My Education is : </td>
+	<td><select name = "dropdown">
+	<option value = "EC">Electronics and Communication
+	<option value = "CE">Computers Engineering
+	<option value = "EE">Electrical Engineering
+	<option value = "ME">Mechanical Engineering
+	<option value = "others">Others</select><tr>
+	<td>I Know : </td>
+	<td><input type = "checkbox" name = "skills" value = "corejava">Core Java
+	<input type = "checkbox" name = "skills" value = "j2ee">J2EE
+	<input type = "checkbox" name = "skills" value = "hadoop">Hadoop
+	<input type = "checkbox" name = "skills" value = "python">Python
+	<tr>
+	<td>I have : </td>
+	<td><select multiple>
+	<option value = "bicycle">Bicycle
+	<option value = "activa">Activa
+	<option value = "car">Car
+	<option value = "helicopter">Helicoper
+	<option value = "bus" >Bus
+	</select><tr>
+	<td>About Me : </td>
+	<td><textarea rows = "5" cols = "50" name = "description">About Me</textarea><tr>
+	<td><td>
+	<input type = "submit" name = "submit" value = "submit">
+	</table>
+	</form>
+</body>
+</html>

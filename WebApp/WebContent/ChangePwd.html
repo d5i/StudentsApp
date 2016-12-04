@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+	font-family: Segoe UI;
+	font-size: 12;
+}
+
+#divChangePwd {
+	width: 30%;
+}
+
+#legendChangePwd {
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Segoe UI;
+	font-size: 15;
+}
+</style>
+<body>
+	<form action="http://localhost:8080/WebApp/changePwd" method="post">
+		<div id="divChangePwd">
+			<fieldset>
+				<legend id="legendChangePwd">Change Password</legend>
+				<table>
+					<tr>
+						<td>Reg No
+						<td><input type="text" name="regNo">
+					<tr>
+						<td>Current Password
+						<td><input name="oldPassword" type="password">
+					<tr>
+						<td>New Password
+						<td><input name="newPassword" type="password">
+					<tr>
+						<td>Retype New Password
+						<td><input name="retypeNewPassword" type="password">
+					<tr>
+					<tr>
+						<td colspan="2" align="center"><input type="reset"
+							value="Reset" style="margin-right: 20px"> <input
+							type="submit" value="Chnage Password">
+				</table>
+			</fieldset>
+		</div>
+	</form>
+</body>
+</html>

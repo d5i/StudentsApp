@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<style>
+/*Header Part CSS*/
+#header_tr {
+	background-color: rgb(234, 234, 234);
+	font-size: 18;
+	font-family: Segoe UI;
+}
+
+#header_td {
+	border: 1px solid rgba(192, 192, 192, 0.8);
+	border-collapse: collapse;
+	border-bottom: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: 0px;
+}
+
+#header {
+	border: 1px solid rgba(192, 192, 192, 0.8);
+	border-collapse: collapse;
+	margin-left: -10px;
+}
+
+#coolBorder {
+	margin-top: 0px;
+	border: 1px solid rgba(192, 192, 192, 0.8);
+	margin-left: -10px;
+}
+
+#divSpace {
+	display: block;
+	height: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Body Part CSS*/
+thead {
+	background-color: rgb(192, 192, 192);
+	font-size: 18;
+}
+
+td {
+	border: 1px solid olive;
+	border-collapse: collapse;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-family: Segoe UI;
+	font-size: 14;
+}
+
+table {
+	border: 1px solid olive;
+	border-collapse: collapse;
+}
+/*Footer Part CSS*/
+#footerDiv {
+	position: absolute;
+	width: 99%;
+	bottom: 0;
+}
+</style>
+<body>
+	<!-- Header Part  -->
+	<table id="header">
+		<tr id="header_tr">
+			<td id="header_td"><a
+				href="http://localhost:8080/WebApp/loginPage"> <img
+					src="home.png" height="26px" width="26px" alt="Home"></img> Home
+			</a>
+			<td id="header_td"><a
+				href="http://localhost:8080/WebApp/Search.html"> <img
+					src="search.png" height="26px" width="26px" alt="Search"></img>Search
+					Student
+			</a>
+			<td id="header_td"><a
+				href="http://localhost:8080/WebApp/CreateProfile.html"> <img
+					src="create.png" height="26px" width="26px" alt="Create Profile"></img>
+					Create Profile
+			</a>
+			<td id="header_td"><a
+				href="http://localhost:8080/WebApp/ChangePwd.html"> <img
+					src="change-pwd.png" height="26px" width="26px"
+					alt="Change Password"></img> Change Password
+			</a>
+			<td id="header_td"><a href="http://localhost:8080/WebApp/loginPage">
+					<img src="logout.png" height="26px" width="26px" alt="Logout"></img>Logout
+			</a>
+		</tr>
+	</table>
+	<hr id="coolBorder">
+	<div id="divSpace"></div>
+
+	<!-- Body Part -->
+
+	<table>
+		<thead>
+			<td>Reg No
+			<td>FirstName
+			<td>MiddleName
+			<td>LastName
+			<td>GFirst Name
+			<td>GMiddle Name
+			<td>GLastName
+			<td>Edit
+			<td>Delete
+		</thead>

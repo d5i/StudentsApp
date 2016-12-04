@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>WebApp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Dulari</servlet-name>
+		<servlet-class>n4j.dudu.commons.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Dulari</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editDelete</servlet-name>
+		<servlet-class>n4j.dk.layers.application.EditDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>editDelete</servlet-name>
+		<url-pattern>/editDelete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>loginForm</servlet-name>
+		<servlet-class>n4j.dk.layers.application.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginForm</servlet-name>
+		<url-pattern>/loginForm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editProfile</servlet-name>
+		<servlet-class>n4j.dk.layers.application.EditProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>editProfile</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deleteProfile</servlet-name>
+		<servlet-class>n4j.dk.layers.application.DeleteProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deleteProfile</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Profile</servlet-name>
+		<servlet-class>n4j.dudu.commons.CreateProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Profile</servlet-name>
+		<url-pattern>/createProfile</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>studentProfile</servlet-name>
+		<servlet-class>n4j.dk.layers.application.StudentDataServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>studentProfile</servlet-name>
+		<url-pattern>/layers</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>StudentSearch</servlet-name>
+		<servlet-class>n4j.dk.layers.application.StudentSearchServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StudentSearch</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChangePwd</servlet-name>
+		<servlet-class>n4j.dk.layers.application.ChnagePwdServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ChangePwd</servlet-name>
+		<url-pattern>/changePwd</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>showStudents</servlet-name>
+		<servlet-class>n4j.dk.layers.application.ShowAllStudentsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>showStudents</servlet-name>
+		<url-pattern>/showStudents</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>graingerSearch</servlet-name>
+		<servlet-class>n4j.dk.commons.GraingerSearchServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>graingerSearch</servlet-name>
+		<url-pattern>/GraingerSearchServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>createCookie</servlet-name>
+		<servlet-class>n4j.dk.commons.CreateCookieServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>createCookie</servlet-name>
+		<url-pattern>/createCookie</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>getCookies</servlet-name>
+		<servlet-class>n4j.dk.commons.GetCookies</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>getCookies</servlet-name>
+		<url-pattern>/getCookies</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>headerLinks</servlet-name>
+		<servlet-class>n4j.dk.layers.application.HeaderLinksServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>headerLinks</servlet-name>
+		<url-pattern>/HeaderLinksServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>rememberMe</servlet-name>
+		<servlet-class>n4j.dk.layers.application.RememberMeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>rememberMe</servlet-name>
+		<url-pattern>/loginPage</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

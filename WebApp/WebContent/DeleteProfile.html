@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+/*CSS*/
+#divForm {
+	width: 35%;
+}
+
+#legendForm {
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-family: Segoe UI;
+	font-size: 15;
+}
+
+body {
+	font-family: Segoe UI;
+	font-size: 12;
+}
+</style>
+
+<body>
+	<form name="deleteProfile" action="http://localhost:8080/WebApp/delete">
+		<div id="divForm">
+			Are you sure you want to delete this profile?
+			<fieldset>
+				<legend id=legendForm>Delete</legend>
+				<table style="width: 100%">
+					<tr>
+						<td>Reg No.</td>
+						<td><input type="text" name="regNo" value="#regNo" disabled></td>
+					<tr>
+						<td>FirstName</td>
+						<td><input type="text" name="firstName" value="#firstName"
+							disabled></td>
+					<tr>
+						<td>MiddleName</td>
+						<td><input type="text" name="middleName" value="#middleName"
+							disabled></td>
+					<tr>
+						<td>LastName</td>
+						<td><input type="text" name="lastName" value="#lastName"
+							disabled></td>
+					<tr>
+						<td>Guardian FirstName</td>
+						<td><input type="text" name="guardianFirstName"
+							value="#guardianFirstName" disabled></td>
+					<tr>
+						<td>Guardian MiddleName</td>
+						<td><input type="text" name="guardianMiddleName"
+							value="#guardianMiddleName" disabled></td>
+					<tr>
+						<td>Guardian LastName</td>
+						<td><input type="text" name="guardianLastName"
+							value="#guardianLastName" disabled></td>
+					<tr>
+					<tr>
+						<td align="center" colspan="2"><input
+							style="margin-right: 20px;" type="submit" value="Delete"><input
+							type="reset">
+				</table>
+			</fieldset>
+		</div>
+		<input type="hidden" name="regNo" value="#regNo">
+	</form>
+</body>
+</html>
