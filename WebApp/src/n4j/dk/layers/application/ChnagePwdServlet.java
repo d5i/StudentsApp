@@ -62,7 +62,7 @@ public class ChnagePwdServlet extends HttpServlet {
 				responseString = "Error in Chaging Password";
 			}
 		} else {
-			responseString = "New Password and Retype New Password are not matching";
+			responseString = "New Password and Retype New Password are not matching!!!!!";
 
 		}
 		writeResponse(req, resp, responseString);
