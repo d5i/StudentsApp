@@ -25,7 +25,7 @@ public class ShowAllStudentsServlet extends HttpServlet {
 		// Get Static HTML Code From File
 		BufferedReader textReader = null;
 
-		FileReader reader = new FileReader("F:\\Lab\\JAVA_EE\\WebApp\\WebContent\\LoginSuccessForAdmin.html");
+		FileReader reader = new FileReader("\\WebApp\\WebContent\\LoginSuccessForAdmin.html");
 		textReader = new BufferedReader(reader);
 		String aLine;
 		while ((aLine = textReader.readLine()) != null) {
@@ -48,11 +48,11 @@ public class ShowAllStudentsServlet extends HttpServlet {
 				htmlResponse.append("<td>" + studentProfile[index].getGuardianMiddleName());
 				htmlResponse.append("<td>" + studentProfile[index].getGuardianLastName());
 
-				htmlResponse.append("<td align=center> <a href = " + "http://localhost:8080/WebApp/editDelete?regNo="
+				htmlResponse.append("<td align=center> <a href = " + "/WebApp/editDelete?regNo="
 						+ studentProfile[index].getRegNo() + "&action=edit" + ">"
 						+ "<img src='edit.png' height='15px' width='15px' alt='Edit'></img></a>");
 
-				htmlResponse.append("<td align=center> <a href = " + "http://localhost:8080/WebApp/editDelete?regNo="
+				htmlResponse.append("<td align=center> <a href = " + "/WebApp/editDelete?regNo="
 						+ studentProfile[index].getRegNo() + "&action=delete" + ">"
 						+ "<img src='delete.png' height='15px' width='15px' alt='Delete'></img></a>");
 				htmlResponse.append("<tr>");
