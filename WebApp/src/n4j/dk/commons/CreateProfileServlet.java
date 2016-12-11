@@ -46,7 +46,7 @@ public class CreateProfileServlet extends HttpServlet {
 			DriverManager.registerDriver(driverRef);
 
 			// Reading properties file for configuration values
-			String filePath = "F:\\Lab\\JAVA_EE\\WebApp\\WebContent\\MySQLConf.properties";
+			String filePath = "\\WebApp\\WebContent\\MySQLConf.properties";
 			FileReader reader = new FileReader(filePath);
 
 			// Converting physical file to Property Object
