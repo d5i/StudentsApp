@@ -132,7 +132,6 @@ public class DataValidation {
 	public String isAdminValidation(String isAdmin) {
 		if (isAdmin.equals("others")) {
 			// Return status code = 18
-			System.out.println("HEllo World ");
 			return scProp.getProperty("18");
 		}
 		return null;
