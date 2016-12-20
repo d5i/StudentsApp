@@ -84,7 +84,7 @@ public class ChnagePwdServlet extends HttpServlet {
 
 		dispatcher = req.getRequestDispatcher("Footer.html");
 		dispatcher.include(req, resp);
-	} // end // writeResponse
+	} // end // writeResponse\
 
 	private boolean checkValidationResult(String responseString) {
 		if (responseString != null)

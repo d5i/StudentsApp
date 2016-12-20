@@ -14,6 +14,8 @@ public class DataValidation {
 	// Get Status Code Properties File Object
 	Properties scProp = StatusCodeProperties.getProp();
 
+	// Registration Number Validations
+
 	public String regNoValidation(String regNo) {
 		int size = Integer.parseInt(prop.getProperty("regNoSize"));
 
@@ -130,6 +132,7 @@ public class DataValidation {
 	public String isAdminValidation(String isAdmin) {
 		if (isAdmin.equals("others")) {
 			// Return status code = 18
+			System.out.println("HEllo World ");
 			return scProp.getProperty("18");
 		}
 		return null;
