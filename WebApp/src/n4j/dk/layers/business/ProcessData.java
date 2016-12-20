@@ -5,6 +5,9 @@ import n4j.dk.layers.dataAccess.SelectData_Login;
 import n4j.dk.layers.dataAccess.StudentDao;
 import n4j.dk.layers.dataAccess.StudentDaoJdbcImpl;
 
+/*
+*  This Business Layer Class is basically used for the handshaking
+*/
 public class ProcessData {
 
 	public StudentProfile[] processForGetStudentsData() {
